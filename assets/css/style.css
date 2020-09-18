@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/*공통영역 시작*/
+* {
+    color: #333;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+div#wrap {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+/*공통영역 끝*/
+/*GuideLine */
+div#wrap {border: 1px solid #000;}
+header#header{border: 1px solid #f00;}
+#header>*{border: 1px solid #000;}
+main#main{border: 1px solid #0f0;}
+main#main>*{border: 1px solid #000;}
+footer#footer{border: 1px solid #00f;}
+/*GuideLine */
+/*header#header 영역 시작*/
+header#header {
+    width: 100%;
+}
+#header #header-flex {
+    width: 1260px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*header#header 영역 끝*/
+/*main#main 영역 시작*/
+
+
+/*main#main 영역 끝*/
+
+
+/*footer#footer 영역 시작*/
+#footer {
+    width: 1260px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+/*div#corp-info 영역 시작*/
+#corp-info {
+    width:260px;
+    border: 1px solid #000;
+}
+
+#corp-info #footer-logo img{
+    width: 22px;
+    vertical-align: middle;
+}
+
+#corp-info #footer-logo span{
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#corp-info #copyright {
+    width: 200px;
+    font-size: 11px;
+
+    margin: 10px 0;
+}
+
+#corp-info #copyright p{
+    margin: 5px 0;
+}
+#corp-info #copyright p>a{
+    text-decoration: underline
+}
+#corp-info #change-language {
+    font-size: 11px;
+    border: none;
+}
+/*div#corp-info 영역 끝*/
+/*div#footer-gnb 영역 시작*/
+#footer-gnb {
+    width: 740px;
+    border: 1px solid #000;
+}
+#footer-main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+#footer-main-menu>li {
+    font-size: 12px;
+
+}
+
+#footer-main-menu>li>a{
+    width: 180px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#footer-main-menu .sub-menu {
+
+}
+
+#footer-main-menu .sub-menu li a{
+    padding: 5px;
+    display: inline-block;
+}
+/*div#footer-gnb 영역 끝*/
+
+
+/*footer#footer 영역 끝*/
