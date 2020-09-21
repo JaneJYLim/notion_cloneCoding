@@ -6,47 +6,184 @@
     <title>Notion메인페이지</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="assets/script/script.js"></script>
+
 </head>
 
 <body>
     <div id="wrap">
-        <header id="header">
-            <div id="header-flex">
-                <div id="header-logo">
-                    <img src="assets/images/notes.png" alt="헤더로고이미지-노트">
-                    <span>Notion</span>
-                </div> <!--div#header-logo-->
-                <div id="header-menu">
-                    <nav id="header-gnb">
-                        <ul id="header-main-menu">
+        <header class="init-header header">
+            <div id="header-init-flex" class="header-flex">
+                <div id="header-init-logo" class="header-logo">
+                    <a href="#">
+                        <img src="assets/images/notes.png" alt="헤더로고이미지-노트">
+                        <span>Notion</span>
+                    </a>
+                </div>
+                <!--div.header-logo-->
+                <div id="header-init-menu" class="header-menu">
+                    <nav id="header-init-gnb" class="header-gnb">
+                        <ul class="header-main-menu">
                             <li>
-                               <a href="#">Product
+                                <a href="#">Product
                                     <i class="fas fa-angle-down"></i>
                                 </a>
+                                <ul class="header-sub-menu scrollable-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-home"></i>
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-user-friends"></i>
+                                            Team wiki
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-tasks"></i>
+                                            Projects & tasks
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-book"></i>
+                                            Notes & docs
+                                        </a>
+                                    </li>
+                                    <li> Notion For</li>
+                                    <li><a href="#">Teams</a></li>
+                                    <li><a href="#">Enterprise</a></li>
+                                    <li><a href="#">Remote work</a></li>
+                                    <li><a href="#">Personal use</a></li>
+                                    <li><a href="#">Startups</a></li>
+                                    <li><a href="#">Students</a></li>
+                                    <li><a href="#">Educators</a></li>
+                                    <li><a href="#">Switch from Evernote</a></li>
+                                </ul>
                             </li>
                             <li>
-                            <a href="#">Download
-                                <i class="fas fa-angle-down"></i>
-                            </a></li>
+                                <a href="#">Download
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="header-sub-menu">
+                                    <li><a href="#">iOS & Android</a></li>
+                                    <li><a href="#">Mac & Windows</a></li>
+                                    <li><a href="#">Web Clipper</a></li>
+                                </ul>
+                            </li>
                             <li>
-                               <a href="#">Resources
-                                   <i class="fas fa-angle-down"></i>
-                                </a></li>
+                                <a href="#">Resources
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="header-sub-menu hide">
+                                    <li><a href="#">Customer stories</a></li>
+                                    <li><a href="#">Guides & tutorials</a></li>
+                                    <li><a href="#">Help & support</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">Pricing</a></li>
                             <li><a href="#">Careers</a></li>
                         </ul>
-                    </nav> <!--nav#header-gnb-->
+                    </nav>
+                    <!--nav#header-gnb-->
                     <span>|</span>
-                    <div id="header-signup">
-                            <a href="#">Log in</a>
-                            <input type="text" placeholder="Enter your email...">
-                            <button type="submit" id="header-submit">Sign Up</button>
-
-                    </div><!--div#header-signup-->
-                </div> <!--div#header-menu-->
-            </div>
+                    <div id="header-init-signup" class="header-signup">
+                        <a href="#">Log in</a>
+                        <a href="#">Sign up</a>
+                    </div>
+                    <!--div#header-init-signup div.header-signup-->
+                </div> <!--div#header-init-menu div.header-menu-->
+            </div><!--div.header-flex-->
         </header>
+        <!--div#init-header-->
+        <header class="stiky-header header">
+            <div id="header-stiky-flex" class="header-flex">
+                <div id="header-stiky-logo" class="header-logo">
+                    <img src="assets/images/notes.png" alt="헤더로고이미지-노트">
+                    <span>Notion</span>
+                </div> <!--div.header-logo-->
+                <div id="header-stiky-menu" class="header-menu">
+                    <nav id="header-stiky-gnb" class="header-gnb">
+                        <ul class="header-main-menu">
+                            <li>
+                                <a href="#">Product
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="header-sub-menu scrollable-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-home"></i>
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-user-friends"></i>
+                                            Team wiki
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-tasks"></i>
+                                            Projects & tasks
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-book"></i>
+                                            Notes & docs
+                                        </a>
+                                    </li>
+                                    <li> Notion For</li>
+                                    <li><a href="#">Teams</a></li>
+                                    <li><a href="#">Enterprise</a></li>
+                                    <li><a href="#">Remote work</a></li>
+                                    <li><a href="#">Personal use</a></li>
+                                    <li><a href="#">Startups</a></li>
+                                    <li><a href="#">Students</a></li>
+                                    <li><a href="#">Educators</a></li>
+                                    <li><a href="#">Switch from Evernote</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Download
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="header-sub-menu">
+                                    <li><a href="#">iOS & Android</a></li>
+                                    <li><a href="#">Mac & Windows</a></li>
+                                    <li><a href="#">Web Clipper</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Resources
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                                <ul class="header-sub-menu hide">
+                                    <li><a href="#">Customer stories</a></li>
+                                    <li><a href="#">Guides & tutorials</a></li>
+                                    <li><a href="#">Help & support</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </nav>
+                    <!--nav#header-gnb-->
+                    <span>|</span>
+                    <div id="header-stiky-signup" class="header-signup">
+                        <a href="#">Log in</a>
+                        <input type="text" placeholder="Enter your email...">
+                        <button type="submit" id="header-submit">Sign Up</button>
+                    </div>
+                    <!--div#header-fixed-signup div.header-signup-->
+                </div>
+                <!--div#header-fixed-menu div.header-menu-->
+            </div><!--div.header-flex-->
+        </header>
+        <!--div#fixed-header-->
         <main id="main">
             <section id="section-all-in-one"></section>
             <section id="section-slide"></section>
@@ -64,11 +201,13 @@
         <footer id="footer">
             <div id="corp-info">
                 <div id="footer-logo">
-                    <img src="assets/images/notes.png" alt="푸로고이미지-노트">
-                    <span>Notion</span>
+                    <a href="#">
+                        <img src="assets/images/notes.png" alt="푸로고이미지-노트">
+                        <span>Notion</span>
+                    </a>
                 </div>
                 <div id="copyright">
-                   <p>The all-in-one workspace for your notes, tasks, wikis, and databases.</p>
+                    <p>The all-in-one workspace for your notes, tasks, wikis, and databases.</p>
                     <p>&copy; 2020 Notion Labs, Inc. </p>
                     <p><a href="#">Tems & Privacy</a></p>
                 </div>
@@ -132,4 +271,9 @@
         </footer>
     </div>
     <!--div#wrap-->
-</body></html>
+    
+    <script src="assets/script/jquery-3.5.1.min.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
