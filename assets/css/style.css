@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /*공통영역 시작*/
 * {
-    color: #333;
+    color: #888;
+    font-size: 14px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -17,7 +18,7 @@ div#wrap {
 }
 
 a {
-    color: #333;
+    color: #666;
     text-decoration: none;
 }
 
@@ -26,27 +27,131 @@ ul {
 }
 /*공통영역 끝*/
 /*GuideLine */
-div#wrap {border: 1px solid #000;}
-header#header{border: 1px solid #f00;}
-#header>*{border: 1px solid #000;}
+/*div#wrap {border: 1px solid #000;}*/
+/*header#header{border: 1px solid #f00;}*/
+/*#header-flex>*{border: 1px solid #000;}*/
+/*#header #header-logo {border: 1px solid #000;}*/
 main#main{border: 1px solid #0f0;}
 main#main>*{border: 1px solid #000;}
-footer#footer{border: 1px solid #00f;}
+/*footer#footer{border: 1px solid #00f;}*/
+/*footer #corp-info{border: 1px solid #000;}*/
+/*footer #footer-gnb{border: 1px solid #000;}*/
 /*GuideLine */
 /*header#header 영역 시작*/
 header#header {
     width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
 }
+
 #header #header-flex {
     width: 1260px;
-    height: 80px;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
 }
+#header #header-logo {
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+}
 
+#header #header-logo img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+#header #header-logo span{
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+#header #header-menu {
+    width: 960px;
+    display: flex;
+}
+#header-gnb {
+    width: 640px;
+}
+
+#header-gnb #header-main-menu {
+    width: 620px;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: flex-end
+}
+
+#header-gnb #header-main-menu>li>a {
+    color: #000;
+    font-size: 16px;
+    padding: 0 16px;
+    display: inline-block;
+}
+
+#header-main-menu li a .fa {
+    font-size: 18px;
+}
+#header-menu #header-signup {
+    width: 380px;
+}
+#header-gnb +span{
+    height: 60px;
+    line-height: 60px;
+    margin: 0 5px;
+}
+#header-signup {
+    height: 60px;
+    line-height: 60px;
+}
+
+#header-signup a {
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#header-signup input{
+    width: 170px;
+    padding: 9px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#header-signup input:focus  {
+    padding-left: 8px;
+    outline-color: lightblue;
+}
+#header-signup input::placeholder {
+    color: #ccc;
+    font-size: 15px;
+    padding-left: 8px;
+}
+#header-signup input:focus::placeholder {
+    padding-left: 0;
+}
+#header-signup #header-submit {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e16259;
+
+}
 /*header#header 영역 끝*/
-/*main#main 영역 시작*/
 
+/*main#main 영역 시작*/
+#main {
+    height: 3000px;
+}
 
 /*main#main 영역 끝*/
 
@@ -60,65 +165,61 @@ header#header {
 }
 /*div#corp-info 영역 시작*/
 #corp-info {
-    width:260px;
-    border: 1px solid #000;
+    width:320px;
+
 }
 
 #corp-info #footer-logo img{
-    width: 22px;
+    width: 30px;
     vertical-align: middle;
 }
 
 #corp-info #footer-logo span{
-    font-size: 14px;
+    color: #333;
+    font-size: 16px;
     font-weight: bold;
     display: inline-block;
 }
 
 #corp-info #copyright {
-    width: 200px;
-    font-size: 11px;
+    width: 220px;
 
-    margin: 10px 0;
+    margin: 15px 0 10px;
 }
 
 #corp-info #copyright p{
+    line-height: 26px;
     margin: 5px 0;
 }
 #corp-info #copyright p>a{
     text-decoration: underline
 }
 #corp-info #change-language {
-    font-size: 11px;
     border: none;
 }
 /*div#corp-info 영역 끝*/
 /*div#footer-gnb 영역 시작*/
 #footer-gnb {
-    width: 740px;
-    border: 1px solid #000;
+    width: 900px;
+
 }
 #footer-main-menu {
+    padding-left: 60px;
     display: flex;
-    justify-content: space-between;
-}
-#footer-main-menu>li {
-    font-size: 12px;
-
+    justify-content: center;
 }
 
 #footer-main-menu>li>a{
-    width: 180px;
+    width: 200px;
+    color: #333;
+    font-size: 15px;
     font-weight: bold;
     display: inline-block;
+/*    border: 1px solid #000;*/
 }
 
-#footer-main-menu .sub-menu {
-
-}
-
-#footer-main-menu .sub-menu li a{
-    padding: 5px;
+#footer-main-menu .sub-menu li>a{
+    padding: 4px 0;
     display: inline-block;
 }
 /*div#footer-gnb 영역 끝*/

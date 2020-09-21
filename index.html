@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Notion메인페이지</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="assets/script/script.js"></script>
 </head>
 
@@ -12,10 +13,37 @@
     <div id="wrap">
         <header id="header">
             <div id="header-flex">
-                <div id="header-logo"></div> <!--div#header-logo-->
+                <div id="header-logo">
+                    <img src="assets/images/notes.png" alt="헤더로고이미지-노트">
+                    <span>Notion</span>
+                </div> <!--div#header-logo-->
                 <div id="header-menu">
-                    <nav id="header-gnb"></nav> <!--nav#header-gnb-->
-                    <div id="header-signup"></div><!--div#header-signup-->
+                    <nav id="header-gnb">
+                        <ul id="header-main-menu">
+                            <li>
+                               <a href="#">Product
+                                    <i class="fas fa-angle-down"></i>
+                                </a>
+                            </li>
+                            <li>
+                            <a href="#">Download
+                                <i class="fas fa-angle-down"></i>
+                            </a></li>
+                            <li>
+                               <a href="#">Resources
+                                   <i class="fas fa-angle-down"></i>
+                                </a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </nav> <!--nav#header-gnb-->
+                    <span>|</span>
+                    <div id="header-signup">
+                            <a href="#">Log in</a>
+                            <input type="text" placeholder="Enter your email...">
+                            <button type="submit" id="header-submit">Sign Up</button>
+
+                    </div><!--div#header-signup-->
                 </div> <!--div#header-menu-->
             </div>
         </header>
@@ -36,7 +64,7 @@
         <footer id="footer">
             <div id="corp-info">
                 <div id="footer-logo">
-                    <img src="assets/images/notes.png" alt="로고이미지-노트">
+                    <img src="assets/images/notes.png" alt="푸로고이미지-노트">
                     <span>Notion</span>
                 </div>
                 <div id="copyright">
