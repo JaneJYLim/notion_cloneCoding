@@ -1,0 +1,5 @@
+1. header : hero.png
+2. section#section-all-in-one 
+    : en-US.png, en-US(1).png, en(2)-US.png
+ 
+3. section#section-slide : logo-strip-desktop-v1.png

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
 /*공통영역 시작*/
 * {
-    color: #888;
+    color: #666;
     font-size: 14px;
     padding: 0;
     margin: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 div#wrap {
-    width: 1260px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -26,6 +26,64 @@ a {
 ul {
     list-style: none;
 }
+
+/*공통 signup 시작*/
+.signup a {
+    color: #666;
+    font-size: 16px;
+    font-family: 'Hind Siliguri', sans-serif;
+
+    text-align: center;
+    margin: 0 5px 0 0;
+    display: inline-block;
+}
+
+#header-init-signup {
+    height: 80px;
+    line-height: 80px;
+}
+
+.signup {
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.signup input{
+    width: 170px;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.signup input:focus  {
+    padding-left: 8px;
+    outline-color: lightblue;
+}
+
+.signup input::placeholder {
+    color: #ccc;
+    font-size: 15px;
+    padding-left: 8px;
+}
+
+.signup input:focus::placeholder {
+    padding-left: 0;
+}
+
+.signup .submit {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 12px;
+    border: 1px solid #af6363;
+    border-radius: 3px;
+    background-color: #e16259;
+}
+
+/*공통 signup 끝*/
+
+
+
 /*공통영역 끝*/
 /*GuideLine */
 /*div#wrap {border: 1px solid #000;}*/
@@ -41,18 +99,25 @@ header.header {
     height: 60px;
     text-align: center;
     background-color: #fff;
-    z-index: 2;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.init-header {
+    margin-bottom: 40px;
 }
 
 .stiky-header {
     position: sticky;
-    top: 10px;
+    top: 0px;
 
     display: none;
 }
+
 .header #header-init-flex {
     width: 1260px;
     height: 80px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -61,6 +126,7 @@ header.header {
     width: 1260px;
     height: 60px;
     border-bottom: 1px solid #ccc;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -88,6 +154,7 @@ header.header {
     font-weight: bold;
     display: inline-block;
 }
+
 .header .header-menu {
     width: 960px;
     display: flex;
@@ -120,6 +187,7 @@ header.header {
 .header-gnb .header-main-menu li {
     position: relative;
 }
+
 .header-gnb .header-main-menu>li>a {
     color: #000;
     font-size: 16px;
@@ -152,6 +220,7 @@ header.header {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .header-main-menu .header-sub-menu li:hover{
     background-color: #eee;
 }
@@ -178,55 +247,10 @@ header.header {
     display: inline-block;
 }
 
-.header-signup a {
-    color: #000;
+#header-init-signup a{
     font-size: 16px;
-    font-family: 'Hind Siliguri', sans-serif;
-
-    text-align: center;
-    margin: 0 5px 0 0;
-    display: inline-block;
-}
-
-#header-init-signup {
-    height: 80px;
-    line-height: 80px;
-}
-
-
-#header-stiky-signup {
-    width: 400px;
-    height: 60px;
-    line-height: 60px;    
-}
-
-#header-stiky-signup input{
-    width: 170px;
-    padding: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-#header-stiky-signup input:focus  {
-    padding-left: 8px;
-    outline-color: lightblue;
-}
-#header-stiky-signup input::placeholder {
-    color: #ccc;
-    font-size: 15px;
-    padding-left: 8px;
-}
-#header-stiky-signup input:focus::placeholder {
-    padding-left: 0;
-}
-#header-stiky-signup #header-submit {
-    color: #fff;
-    font-size: 14px;
-    padding: 8px 12px;
-    border: 1px solid #af6363;
-    border-radius: 3px;
-    background-color: #e16259;
-
+    font-weight: bold;
+    padding: 0 10px;
 }
     /*div#header-signup  영역 끝*/
 
@@ -236,6 +260,121 @@ header.header {
 #main {
     height: 3000px;
     border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+#section-all-in-one  {
+    width: 1260px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px auto;
+}
+
+#section-all-in-one img {
+    width: 500px;
+}
+
+#section-all-in-one h1 {
+    color: #000;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+#section-all-in-one p {
+    color: #888;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#section-all-in-one .section-signup {
+    margin: 0 auto;
+}
+
+#section-all-in-one .section-signup input {
+    width: 260px;
+    padding: 10px 0;
+}
+
+#section-all-in-one .section-signup button {
+    width: 90px;
+    padding: 10px 12px;
+}
+
+#section-all-in-one span {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#section-slide {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#section-slide #slideshow{
+    width: 1260px;
+    height: 800px;
+    border-radius: 5px;
+    margin:  0 auto;
+    background-color: #f9f5f1;
+    position: relative;
+
+}
+
+#section-slide #slideshow .slide-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#section-slide #slideshow .slide-btn span{
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 40px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#section-slide #slideshow .slide-btn span:hover{
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#slideshow #slide-fade-frame {
+    width: 960px;
+    height: 610px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#slide-fade-frame a{
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slide-fade-frame #first-a{
+    z-index: 3;
+}
+
+#slide-fade-frame #second-a{
+    z-index: 2;
+}
+
+#slide-fade-frame #third-a{
+    z-index: 1;
+}
+
+#section-slide>img {
+    width: 1260px;
+    border-bottom: 1px solid #ccc;
+    padding: 60px 120px;
+    margin-bottom: 20px;
 }
 
 /*main#main 영역 끝*/
@@ -248,10 +387,10 @@ header.header {
     display: flex;
     justify-content: center;
 }
+
 /*div#corp-info 영역 시작*/
 #corp-info {
     width:320px;
-
 }
 
 #corp-info #footer-logo img{
@@ -276,9 +415,11 @@ header.header {
     line-height: 26px;
     margin: 5px 0;
 }
+
 #corp-info #copyright p>a{
     text-decoration: underline
 }
+
 #corp-info #change-language {
     border: none;
 }
@@ -286,8 +427,8 @@ header.header {
 /*div#footer-gnb 영역 시작*/
 #footer-gnb {
     width: 900px;
-
 }
+
 #footer-main-menu {
     padding-left: 60px;
     display: flex;
