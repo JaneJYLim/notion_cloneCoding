@@ -2,7 +2,7 @@
 
 ### https://janejylim.github.io/notion_cloneCoding/
 
-#### 데스크탑
+## 데스크탑
 
 ### 구현한 것
 - 헤더(html, css, js)
