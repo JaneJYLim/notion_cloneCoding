@@ -2,11 +2,10 @@
 
 ### https://janejylim.github.io/notion_cloneCoding/
 
-## 데스크탑
 
-### 구현한 것
-- 헤더(html, css, js)
-- 푸터(html, css, js)
+### 구현한 것_desktopCSS
+- 헤더(html, css, js) 
+- 푸터(html, css, js) 
 - section 1st(html, css, js) 
 - section 2nd(html, css, js)
 
